@@ -1,0 +1,62 @@
+###
+POST http://localhost:4000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+POST http://localhost:4000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+GET http://localhost:4000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+GET http://localhost:4000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+GET http://localhost:4000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+###
+GET http://localhost:4000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+GET http://localhost:4000/tweets/6/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+GET http://localhost:4000/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+GET http://localhost:4000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+POST http://localhost:4000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
+
+
+###
+DELETE http://localhost:4000/tweets/19/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxMjMwMTI0fQ.WP8Loq3an3L9XFF0aA8Zl0xxTJsE9K8Gl_r6vwh2HPY 
